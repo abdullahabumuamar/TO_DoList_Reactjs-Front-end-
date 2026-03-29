@@ -1,0 +1,43 @@
+.pomodoroTimer {
+  background: var(--color-surface);
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.timerDisplay {
+  margin: var(--spacing-large) 0;
+}
+
+.timerDisplay h3 {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin: var(--spacing-medium) 0;
+}
+
+.timerControls {
+  display: flex;
+  gap: var(--spacing-medium);
+  justify-content: center;
+}
+
+.timerControls button {
+  padding: var(--spacing-small) var(--spacing-large);
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.timerControls button:hover {
+  background: var(--color-secondary);
+}
+
+.timerControls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 

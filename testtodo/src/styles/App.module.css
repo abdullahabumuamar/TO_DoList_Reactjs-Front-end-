@@ -1,0 +1,41 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-large);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+
+.themeToggle:hover {
+  transform: scale(1.1);
+}
+
+.mainContent {
+  display: grid;
+  gap: var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: var(--spacing-medium);
+  }
+  
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+} 

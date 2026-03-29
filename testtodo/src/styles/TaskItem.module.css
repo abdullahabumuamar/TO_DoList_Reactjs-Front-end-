@@ -1,0 +1,95 @@
+.taskItem {
+  background: var(--color-surface);
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-small);
+  border-right: 4px solid var(--color-primary);
+  text-align: left;
+}
+
+.completed {
+  border-right-color: var(--color-success);
+  opacity: 0.8;
+}
+
+.title {
+  margin-bottom: var(--spacing-small);
+  color: var(--color-text);
+}
+
+.description {
+  color: #666;
+  margin-bottom: var(--spacing-small);
+}
+
+.controls {
+  display: flex;
+  gap: var(--spacing-small);
+  margin-top: var(--spacing-medium);
+}
+
+.button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.completeButton {
+  background: var(--color-success);
+  color: white;
+}
+
+.editButton {
+  background: var(--color-primary);
+  color: white;
+}
+
+.deleteButton {
+  background: var(--color-error);
+  color: white;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.editing {
+  background: var(--color-surface);
+  padding: var(--spacing-large);
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-medium);
+}
+
+.editingInput,
+.editingTextarea {
+  width: 100%;
+  padding: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.editingButtons {
+  display: flex;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-medium);
+}
+.saveButton, .cancelButton {
+  flex: 1;
+  background: var(--color-success);
+  color: white;
+  height: 30px; /* Slightly taller */
+  padding: 8px 12px; /* Adjusted padding */
+  font-size: 14px; /* Keeps text readable */
+  border-radius: 4px; /* Slightly rounded */
+  border: none;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: var(--color-error);
+}
